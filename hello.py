@@ -3,4 +3,4 @@ def app(environ, start_response):
     return [bytes('\r\n'.join(environ['QUERY_STRING'].split('&')),
                   encoding="utf8")]
 
-bind = "0.0.0.0:8080"
+bind = "127.0.0.1:8080"
